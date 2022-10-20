@@ -25,5 +25,7 @@ require "furthestDrop.nvim-tree"
 require "furthestDrop.cybu"
 require "furthestDrop.lualine"
 require "furthestDrop.toggleterm"
+require "furthestDrop.telescope"
+require "furthestDrop.project"
 
 require "furthestDrop.colorscheme"
