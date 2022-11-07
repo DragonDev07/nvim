@@ -117,6 +117,10 @@ return packer.startup(function(use)         -- Start packer
 
     -- Themes
     use 'folke/tokyonight.nvim'
+    use {
+        "catppuccin/nvim",
+        as = "catppuccin"
+    }
 
     -- Git
     use "lewis6991/gitsigns.nvim"
