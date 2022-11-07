@@ -59,6 +59,7 @@ return packer.startup(function(use)         -- Start packer
     use "nvim-lua/popup.nvim"               -- An implementation of the Popup API from vim in Neovim
     use "nvim-lua/plenary.nvim"             -- Useful lua functions used by many plugins
     use "mfussenegger/nvim-dap"             -- Debugging support
+    use "nvim-lualine/lualine.nvim"         -- Statusline
     use "vimsence/vimsence"                 -- Discord status
 
     -- Buffers & Statusline!
@@ -102,7 +103,7 @@ return packer.startup(function(use)         -- Start packer
     -- use {"saecki/crates.nvim", event = { "BufRead Cargo.toml" }, config = function() require('crates').setup() end, } --rust crate tools and features
 
     -- Telescope Fuzzy Finding
-    use {"nvim-telescope/telescope.nvim", cmd = "Telescope", config = function () require'furthestDrop.telescope' end}
+    use "nvim-telescope/telescope.nvim"
 
     -- Toggle Term!
     use "akinsho/toggleterm.nvim"
