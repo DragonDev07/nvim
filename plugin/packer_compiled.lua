@@ -84,11 +84,6 @@ _G.packer_plugins = {
     path = "/Users/andrewwelton/.local/share/nvim/site/pack/packer/start/LuaSnip",
     url = "https://github.com/L3MON4D3/LuaSnip"
   },
-  ["bufferline.nvim"] = {
-    loaded = true,
-    path = "/Users/andrewwelton/.local/share/nvim/site/pack/packer/start/bufferline.nvim",
-    url = "https://github.com/akinsho/bufferline.nvim"
-  },
   catppuccin = {
     loaded = true,
     path = "/Users/andrewwelton/.local/share/nvim/site/pack/packer/start/catppuccin",
@@ -282,9 +277,9 @@ vim.cmd [[augroup packer_load_aucmds]]
 vim.cmd [[au!]]
   -- Filetype lazy-loads
 time([[Defining lazy-load filetype autocommands]], true)
+vim.cmd [[au FileType md ++once lua require("packer.load")({'markdown-preview.nvim'}, { ft = "md" }, _G.packer_plugins)]]
 vim.cmd [[au FileType markdown ++once lua require("packer.load")({'markdown-preview.nvim'}, { ft = "markdown" }, _G.packer_plugins)]]
 vim.cmd [[au FileType MD ++once lua require("packer.load")({'markdown-preview.nvim'}, { ft = "MD" }, _G.packer_plugins)]]
-vim.cmd [[au FileType md ++once lua require("packer.load")({'markdown-preview.nvim'}, { ft = "md" }, _G.packer_plugins)]]
 time([[Defining lazy-load filetype autocommands]], false)
 vim.cmd("augroup END")
 

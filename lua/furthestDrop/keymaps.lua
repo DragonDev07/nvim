@@ -42,23 +42,18 @@ keymap("n", "<S-T>", ":PackerLoad toggleterm.nvim<CR>:lua _TOGGLE_SIMPLE()<CR>",
 keymap("n", "<leader>e", ":NvimTreeToggle<CR>", opts)
 
 -- Buffers
-keymap("n", "<C-]>", ":BufferLineCycleNext<CR>", opts)
-keymap("n", "<C-[>", ":BufferLineCyclePrev<CR>", opts)
-keymap("n", "<C-S-[>", ":BufferLineMovePrev<CR>", opts)
-keymap("n", "<C-S-]>", ":BufferLineMoveNetx<CR>", opts)
-keymap("n", "<leader>te", ":BufferLineSortByExtension<CR>", opts)
-keymap("n", "<leader>tb", ":BufferLinePick<CR>", opts)
-keymap("n", "<leader>td", ":BufferLineSortByDirectory<CR>", opts)
-keymap("n", "<leader>tc", ":BufferLinePickClose<CR>", opts)
+--[[ keymap("n", "<C-]>", ":BufferLineCycleNext<CR>", opts) ]]
+--[[ keymap("n", "<C-[>", ":BufferLineCyclePrev<CR>", opts) ]]
+--[[ keymap("n", "<C-S-[>", ":BufferLineMovePrev<CR>", opts) ]]
+--[[ keymap("n", "<C-S-]>", ":BufferLineMoveNetx<CR>", opts) ]]
+--[[ keymap("n", "<leader>te", ":BufferLineSortByExtension<CR>", opts) ]]
+--[[ keymap("n", "<leader>tb", ":BufferLinePick<CR>", opts) ]]
+--[[ keymap("n", "<leader>td", ":BufferLineSortByDirectory<CR>", opts) ]]
+--[[ keymap("n", "<leader>tc", ":BufferLinePickClose<CR>", opts) ]]
 
 -- Packer Loads
-keymap("n", "<leader>lg", ":PackerLoad toggleterm.nvim<CR>:lua _TOGGLE_LAZYGIT()<CR>", opts) -- see visualized git info in popup with Lazygit
-keymap("n", "<leader>ht", ":PackerLoad toggleterm.nvim<CR>:lua _TOGGLE_HTOP()<CR>", opts) -- see system resource usage with HTOP in pop-up
-keymap("n", "<leader>py", ":PackerLoad toggleterm.nvim<CR>:lua _TOGGLE_PYTHON()<CR>", opts) -- open pop up with python interactive terminal
-keymap("n", "<leader>fg", ":PackerLoad toggleterm.nvim<CR>:lua _TOGGLE_NCDU()<CR>", opts) -- See file sizes in current dir
-keymap("n", "<leader>lt", ":PackerLoad toggleterm.nvim<CR>:lua _TOGGLE_LUATERM()<CR>", opts) -- open pop-up with lua interactive terminal
 keymap("n", "<leader>pt", ":PackerLoad telescope.nvim<CR>", opts) -- load telescope
-keymap("n", "<leader>ai", ":PackerLoad cmp-tabnine<CR>", opts) -- ACTIVATE THE POWER OF TABNINE (and start using more resources)
+--[[ keymap("n", "<leader>ai", ":PackerLoad cmp-tabnine<CR>", opts) -- ACTIVATE THE POWER OF TABNINE (and start using more resources) ]]
 
 -- Telescope Fuzzy Finder
 keymap("n", "<leader>fw", ":Telescope live_grep<CR>", opts) -- Fuzzy search for strings of characters in vurrent directory with Telescope
