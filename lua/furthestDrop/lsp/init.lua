@@ -11,9 +11,9 @@
 
 local status_ok, _ = pcall(require, "lspconfig")
 if not status_ok then
-    vim.notify("lspconfig not found!")
-	return
+  return
 end
 
-require("furthestDrop.lsp.lsp-installer")
+require "furthestDrop.lsp.mason"
 require("furthestDrop.lsp.handlers").setup()
+require "furthestDrop.lsp.null-ls"

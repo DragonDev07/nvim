@@ -59,7 +59,6 @@ return packer.startup(function(use)         -- Start packer
     use "nvim-lua/popup.nvim"               -- An implementation of the Popup API from vim in Neovim
     use "nvim-lua/plenary.nvim"             -- Useful lua functions used by many plugins
     use "mfussenegger/nvim-dap"             -- Debugging support
-    use "nvim-lualine/lualine.nvim"         -- Statusline
     use "vimsence/vimsence"                 -- Discord status
 
     -- Buffers & Statusline!
@@ -96,9 +95,10 @@ return packer.startup(function(use)         -- Start packer
     use "rafamadriz/friendly-snippets" -- A whole bunch of premade snippets
 
     -- LSP
-    use "neovim/nvim-lspconfig" 
-    use "williamboman/nvim-lsp-installer"
-    use 'mfussenegger/nvim-jdtls'
+    use "neovim/nvim-lspconfig" -- enable LSP
+    use "williamboman/mason.nvim" -- simple to use language server installer
+    use "williamboman/mason-lspconfig.nvim" -- simple to use language server installer
+    use 'jose-elias-alvarez/null-ls.nvim' -- LSP diagnostics and code actions
     -- TODO:
     -- use {"saecki/crates.nvim", event = { "BufRead Cargo.toml" }, config = function() require('crates').setup() end, } --rust crate tools and features
 
